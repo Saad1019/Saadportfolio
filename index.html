@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad | Futuristic Data Scientist Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #01010a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Terminal-style intro */
+    #intro {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      animation: typeout 4s steps(30) forwards;
+    }
+
+    @keyframes typeout {
+      0% { content: ''; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    #intro span::after {
+      content: '|';
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      color: #3cf;
+      background: rgba(10, 10, 30, 0.6);
+      backdrop-filter: blur(8px);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0ff;
+      font-size: 1.8rem;
+      border-left: 5px solid #0ff;
+      padding-left: 12px;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #3cf;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="intro">
+    <span>Initializing Saad's Brain...</span>
+  </div>
+
+  <header>Saad - Data Scientist</header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="panel">
+      I’m Muhammad Saad Naeem, a data scientist skilled in Python, SQL, Excel, Power BI, Tableau, and machine learning. With a passion for solving real-world problems through data, I design analytical solutions and visualizations that deliver impact.
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="panel">
+      Python, Pandas, SQL, MySQL, Excel, Power BI, Tableau, Machine Learning, Deep Learning
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="panel">
+      - PakWheels Sales Dashboard (Power BI)<br>
+      - Student Performance SQL Analysis<br>
+      - Excel-Based Sales Tracker
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="panel">
+      Email: saad.naeem@example.com<br>
+      GitHub: github.com/yourusername<br>
+      LinkedIn: linkedin.com/in/yourprofile
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Saad | All Rights Reserved
+  </footer>
+
+</body>
+</html>
